@@ -1,10 +1,21 @@
+* { /* sets all elements to have the code within brackets, will make them look the same in all browsers*/
+    margin: 0;
+    padding: 0;
+  }
+
+
 #navbar {
-   overflow:hidden; 
-   background-color:blue;
+display:flex; /* creates a flex container */
+background-color:#be3144;
+box-shadow: 0 2px #be3144 ;
+justify-content: center;  /* moves bar to the center */
+position:fixed; /* nav bar will stay still even when scrolling */
+top: 0;
+left: 0;
+width: 100%;
 }
 
 .nav-link {
-
     float: right;
     color: #f2f2f2;
     text-align: center;
@@ -14,22 +25,42 @@
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
+.tolujpeg{
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    position:relative; 
+    border: solid;
+    border-color:#be3144;
+    border-width: medium;
+
+}
 body {
-    margin:0;
+    /*margin:0;*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+   line-height: 1.4;
+   color:#f0f0f0;
+   
+}
+
+#welcome-section ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
 
 #welcome-section {
     text-align: center;
-    padding-top: 300px;
-    padding-bottom: 400px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    /*margin: auto;*/
 }
-#welcome-section p { color: green;}
 
 .projects-grid{
     display:grid;
     grid-template-columns: auto auto auto;
-
-
 
 }
 
@@ -38,18 +69,36 @@ body {
     height: 350px;
 }
 
-.project-title{
-text-align: center;
-
-}
-
 #projects {
-    background:coral;
-
+    background-color: #36454F;
 }
 
-#projects h1{
-    color: white;
-    text-align:center;
-    
+#projects-title {
+color:white;
+text-align:center;
+font-family:'Raleway', sans-serif;
+font-weight:500;
+padding-top: 12px;
+ padding-bottom: 20px;
+
+}
+.projects-grid {
+    display: grid;
+}
+
+.griditem-1{
+    text-align: center;
+}
+
+.griditem-2{
+    text-align: center;
+}
+
+.griditem-3{
+    text-align: center;
+}
+
+#contact {
+  background-color: #FFB6C1;
+  text-align: center;
 }
